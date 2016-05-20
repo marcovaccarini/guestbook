@@ -12,6 +12,13 @@ $database = new medoo([
     'database_type' => 'sqlite',
     'database_file' => '../storage/database.db'
 ]);
+$comment = new GuestBook\Comment($database);
+$comment->setEmail('quirkmode@yahoo.com')
+        ->setName('Marco Vaccarini')
+        ->setComment('It works!')
+        ->setComment('Hurra! Saving comment works!')
+        ->save();
+
 
 //  dump($database);
 
@@ -41,6 +48,10 @@ $database = new medoo([
         <p>Hello world! This is HTML5 Boilerplate.</p>
         -->
         <form method="post">
+            <label>Name: <input type="text" name="name" placeholder="Your name"></label>
+            <label>Email: <input type="text" name="email" placeholder="your@email.com"></label>
+            <label>Comment: <textarea name="comment" cols="30" rows="10">
+            </textarea></label>
             <input type="submit" value="Save">
         </form>
 

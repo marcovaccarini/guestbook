@@ -12,6 +12,14 @@ $database = new medoo([
     'database_type' => 'sqlite',
     'database_file' => '../storage/database.db'
 ]);
+/*
+$comment = new GuestBook\Comment($database);
+$comment->setEmail('quirkmode@yahoo.com')
+        ->setName('Marco Vaccarini')
+        ->setComment('It works!')
+        ->setComment('Hurra! Saving comment works!')
+        ->save();
+*/
 
 //  dump($database);
 
