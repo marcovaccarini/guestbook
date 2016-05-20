@@ -46,3 +46,7 @@ packages/*
 .vagrant/*
 
 .env
+database.local.db
+
+# Gedit
+*~
