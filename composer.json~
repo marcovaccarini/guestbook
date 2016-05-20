@@ -1,22 +1,24 @@
 {
-    "name": "sitepoint/guestbook",
-    "description": "A simple guestbook app",
-    "type": "project",
-    "authors": [
-        {
-            "name": "Marco Vaccarini",
-            "email": "quirkmode@yahoo.com"
-        }
-    ],
-    "require": {
-        "catfan/medoo": "^1.0"
-    },
-    "require-dev": {
-        "symfony/var-dumper": "^3.0"
+  "name": "sitepoint/guestbook",
+  "description": "A guestbook app",
+  "type": "project",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Your Name Here",
+      "email": "your@email.here"
     }
-    "autoload": {
-        "psr-4": {
-        "GuestBook\\": "src"
-        }
+  ],
+  "require": {
+    "catfan/medoo": "^1.0",
+    "particle/validator": "^2.0"
+  },
+  "require-dev": {
+    "symfony/var-dumper": "^2.7"
+  },
+  "autoload": {
+    "psr-4": {
+      "SitePoint\\": "src"
     }
+  }
 }
